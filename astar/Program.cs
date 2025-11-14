@@ -61,11 +61,7 @@ namespace astar
                     //zaznaczamy sciezke 3kami
                     foreach (obiekt pole in finalnaSciezka)
                     {
-                        // Sprawdzamy, czy to nie Start lub meta (żeby ich nie nadpisać)
-                        if ((pole.x != 0 || pole.y != 0) && !czyToMeta(pole))
-                        {
                             mapa[pole.y, pole.x] = 3;
-                        }
                     }
 
                     //wyswietla zatrójkowaną mape mapę
